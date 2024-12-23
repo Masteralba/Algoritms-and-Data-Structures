@@ -21,7 +21,7 @@ void Dynamic_array_push_back(Dynamic_array* dynamic_array, TYPE data)
     dynamic_array->array[dynamic_array->current_size++] = data;
 }
 
-void Dynamic_array_change_elem(Dynamic_array* dynamic_array, unsigned char index, TYPE data)
+void Dynamic_array_change_elem(Dynamic_array* dynamic_array, int index, TYPE data)
 {
     if (index >= 0 && index < dynamic_array->current_size)
     {
@@ -29,7 +29,7 @@ void Dynamic_array_change_elem(Dynamic_array* dynamic_array, unsigned char index
     }
 }
 
-unsigned char Dynamic_array_size(Dynamic_array* dynamic_array)
+int Dynamic_array_size(Dynamic_array* dynamic_array)
 {
     return dynamic_array->current_size;
 }
